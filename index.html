@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderpath Publishing - Children's Books that Inspire</title>
+    <style>
+        :root {
+            --primary-color: #2C5530;
+            --secondary-color: #8BA888;
+            --accent-color: #E8C07D;
+            --text-color: #333;
+            --light-bg: #F5F5F5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 200px;
+            margin: 1rem 0;
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+            padding: 4rem 2rem;
+            background-color: var(--light-bg);
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .featured-author {
+            padding: 4rem 2rem;
+            background-color: white;
+        }
+
+        .author-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .author-image {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 50%;
+        }
+
+        .books-section {
+            padding: 4rem 2rem;
+            background-color: var(--light-bg);
+        }
+
+        .books-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .book-card {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .book-card img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .author-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Wanderpath Publishing Logo" class="logo">
+        <h1>Wanderpath Publishing</h1>
+        <p>Guiding Young Minds Through Nature's Lessons</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#author">Meet Our Author</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <img src="images/hero-nature-reading.jpg" alt="Children reading in nature" class="hero-image">
+        <h2>Where Adventure Meets Wisdom</h2>
+        <p>Discover stories that inspire wonder, kindness, and understanding in young hearts.</p>
+    </section>
+
+    <section class="featured-author" id="author">
+        <div class="author-content">
+            <img src="images/robin-walker.jpg" alt="Robin Walker" class="author-image">
+            <div>
+                <h2>Meet Robin Walker</h2>
+                <p>Robin Walker brings nature's wisdom to life through enchanting stories that captivate young readers aged three to seven. With a background in early childhood education and a deep love for the natural world, Robin creates tales that seamlessly blend adventure with valuable life lessons.</p>
+                <br><p>Each story is crafted to spark curiosity, encourage empathy, and foster a connection with the world around us. Through gentle guidance and vibrant storytelling, Robin helps children discover their own moral compass while exploring the wonders of nature.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="books-section" id="books">
+        <h2>Featured Books</h2>
+        <div class="books-grid">
+            <div class="book-card">
+                <img src="images/wise-oak-secret.jpg" alt="The Wise Oak's Secret">
+                <h3>The Wise Oak's Secret</h3>
+                <p>A tale of friendship and patience through the seasons.</p>
+            </div>
+            <div class="book-card">
+                <img src="images/river-friends.jpg" alt="River Friends">
+                <h3>River Friends</h3>
+                <p>Discover the power of teamwork with woodland creatures.</p>
+            </div>
+            <div class="book-card">
+                <img src="images/butterfly-journey.jpg" alt="The Butterfly's Journey">
+                <h3>The Butterfly's Journey</h3>
+                <p>A story about courage and embracing change.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Start Their Journey Today</h2>
+        <p>Give the gift of wisdom through stories that will grow with your child.</p>
+        <a href="#contact" class="cta-button">Explore Our Books</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Wanderpath Publishing. All rights reserved.</p>
+        <p>Contact: info@wanderpathpublishing.com</p>
+    </footer>
+</body>
+</html>
